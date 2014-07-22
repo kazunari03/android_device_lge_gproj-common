@@ -459,5 +459,3 @@ on property:ro.fuse_sdcard=true
 on property:dev.bootcomplete=1
     write /sys/devices/virtual/graphics/fb1/hdmi_boot_completed 1
 # LGE_CHANGE_E, 20120914, chaeuk.lee@lge.com
-
-
