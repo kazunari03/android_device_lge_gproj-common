@@ -50,7 +50,10 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/media_profiles.xml:system/etc/media_profiles.xml \
-	$(LOCAL_PATH)/media_codecs.xml:system/etc/media_codecs.xml
+	$(LOCAL_PATH)/media_codecs.xml:system/etc/media_codecs.xml \
+	frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:system/etc/media_codecs_google_audio.xml \
+	frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:system/etc/media_codecs_google_video.xml \
+	frameworks/av/media/libstagefright/data/media_codecs_ffmpeg.xml:system/etc/media_codecs_ffmpeg.xml
 
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/kickstart_checker.sh:system/etc/kickstart_checker.sh
@@ -122,8 +125,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	persist.audio.fluence.voicecall=true \
 	persist.audio.handset.mic=dmic \
 	persist.audio.fluence.mode=endfire \
-	persist.audio.lowlatency.rec=false \
-	af.resampler.quality=4
+	persist.audio.lowlatency.rec=false
 
 
 # Do not power down SIM card when modem is sent to Low Power Mode.
